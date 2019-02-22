@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        
+            
+                   <!-- <img src="https://i.imgur.com/PVcYPlJ.png">-->
+            
+
+            <div class="container splash h-100">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div>
+                        <h1 class="text-center text-white display-3">
+                            One Young World Bath Caucus
+                        </h1>
+                        <div class="pt-2 ml-1 row justify-content-center">
+                                <button id="buyticket_btn" type="button" class="col-xs-6 col-md-2 m-1 btn btn-outline-white btn-rounded waves-effect">
+                                    Buy Ticket
+                                </button>
+                                <button id="info_btn" type="button" class=" col-xs-6 col-md-2 m-1 btn btn-outline-white ">
+                                    Information
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+            <!--<div id="whatson_title" class="container h-100">
+                <h1 class="text-center  display-3">
+                        What's Happening?
+                </h1>
+            -->
+
+                <div id="whatson_title" class="container h-100">
+                    <div class="row">
+                        <div class="col-md-7 mx-auto text-left section-heading">
+                            <h2 class="mb-5 text-uppercase">About The <span>Conference</span></h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-7">
+                            <h3 class="regular-font-size text-uppercase mb-3">Conference Begins In</h3>
+
+                            <div id="date-countdown" class="mb-4 mt-3">
+
+                                <span class="countdown-block lead">
+                                    <span id="weeks" class="label">
+                                        85
+                                    </span>
+                                    weeks
+                                </span>
+
+                                <span class="countdown-block lead">
+                                    <span id="days" class="label">
+                                        01
+                                    </span>
+                                     days 
+                                </span>
+
+                                <span class="countdown-block lead">
+                                    <span id="hours" class="label">
+                                        07
+                                    </span>
+                                    hours
+                                 </span>
+
+                                 <span class="countdown-block lead">
+                                    <span id="minutes" class="label">
+                                        36
+                                    </span>
+                                        mins
+                                </span>
+                                
+                                <span class="countdown-block lead">
+                                    <span id="seconds" class="label">
+                                    22
+                                    </span>
+                                 secs
+                                </span>
+
+                                <span class="ghost-item"></span>
+                                <span class="ghost-item"></span>
+                                <span class="ghost-item"></span>
+                                <span class="ghost-item"></span>
+                                <span class="ghost-item"></span>
+                                <span class="ghost-item"></span>
+                            </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--</div>-->
+
+            <div class="container h-100">
+
+                <div id="buytickets_title" class="text-center display-3">
+                        Buy Tickets
+                </div>
+
+                <div class="w-100 align-items-center pt-3">
+                    <iframe src="https://eventbrite.co.uk/tickets-external?eid=53584079424&ref=etckt" frameborder="0" height="600px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+                    </iframe>
+                </div>
+
+
+
+            </div>
+            
+            <!-- Main navigation -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </body>
+
+    <script>
+
+        $(".btn").mousedown(function(e){
+            e.preventDefault();
+        });
+
+        $("#info_btn").click(function(){
+          $("html,body").animate({
+              scrollTop: $('#whatson_title').offset().top - $('body').offset().top + $('body').scrollTop()
+          });
+        });
+
+        $("#buyticket_btn").click(function(){
+            $("html,body").animate({
+              scrollTop: $('#buytickets_title').offset().top - $('body').offset().top + $('body').scrollTop()
+          });
+        });
+
+        CountDownTimer('04/06/2019 10:00 AM', 'countdown');
+
+        function CountDownTimer(dt, id)
+        {
+
+            var end = new Date(dt);
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var _week = _day * 7;
+
+            var timer;
+
+            function showRemaining() {
+
+                var now = new Date();
+                var distance = end - now;
+
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.getElementById("#date-countdown").innerHTML = 'THE EVENT HAS STARTED';
+
+                    return;
+                }
+
+                var weeks = Math.floor(distance / _week);
+
+                var days = Math.floor((distance % _week) / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+           
+                document.getElementById("weeks").innerHTML = weeks;
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes
+                document.getElementById("seconds").innerHTML = seconds;
+            }
+
+            timer = setInterval(showRemaining, 1000);
+            
+
+        }
+        /*
+        $("#buyticket_btn").click(function(){
+            window.location.href="https://www.eventbrite.co.uk/e/one-young-world-bath-caucus-2019-tickets-53584079424";
+        })
+        */
+
+    </script>
+
+    <style>
+
+    body, html {
+        height: 100%;
+    }
+      .splash {
+        background-image:url(https://www.romanbaths.co.uk/sites/roman_baths/files/dsc8009-hdr.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        max-width: 100%;
+      }
+
+      .countdown-block{
+        border:1px solid grey;
+        border-radius: 15px;
+        flex-basis: 100px;
+        flex-grow: 1;
+        height: auto;
+        margin: 10px;
+        text-align: center;
+        padding-top:15px;
+        padding-bottom:15px;
+        font-size:25px;
+      }
+
+      .ghost-item {
+        flex-basis: 100px;
+        flex-grow: 1;
+        margin: 0 10px;
+      }
+
+      .label{
+        color:red;
+        display:block;
+      }
+
+      #date-countdown{
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      .container{
+        height:100vh
+    }      
+
+      .navbar{
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+
+      .btn-outline-white{
+        border-color:#ffffff;
+        color:#ffffff;
+      }
+
+    h2 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 70px; font-style: normal; font-variant: normal; font-weight: 700; }
+
+      h3 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; }
+
+      .section-heading>h2>span{
+        display: list-item;
+        list-style: none;
+       }
+
+    </style>
+
+
+</html>
