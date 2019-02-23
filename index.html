@@ -84,7 +84,7 @@
 
                     <div class="row">
                         <div class="mx-auto text-left">
-                            <h2 class="mt-5 trebuchet" id="abouttitle">About the Conference</h2>
+                            <h2 class="mt-2 trebuchet" id="abouttitle">About the Conference</h2>
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <hr>
-                            At the heart of every global threat is a failure of leadership. This new generation is the most informed, most educated, most connected generation in human history. One Young World identifies, promotes and connects the world’s most impactful young leaders to create a better world, with more responsible, more effective leadership.
+                            <strong> --- Work in progress --- </strong>
                         </div>
                     </div>
 
@@ -102,10 +102,10 @@
             </div>
 
 
-            <div class="container h-100">
+            <div class="container-fluid h-100" id="buytickets_pg">
 
-                <div id="buytickets_title" class="text-center display-3">
-                        Buy Tickets
+                <div id="buytickets_title" class="trebuchet text-center display-3">
+                        Get Your Ticket Now
                 </div>
 
                 <div class="w-100 align-items-center pt-3">
@@ -222,9 +222,25 @@
         display:block;
     }
 
-    @media only screen and (min-width: 600px) {
+
+     @media only screen and (max-width: 600px) {
 
           .countdown-block{
+            font-size:14px;
+          }
+
+          .label{
+            font-size:20px;
+          }
+    }
+
+    @media only screen and (min-width: 576px) {
+
+          .countdown-block{
+            font-size:14px;
+          }
+
+          .label{
             font-size:20px;
           }
     }
@@ -232,26 +248,25 @@
     @media only screen and (min-width: 992px) {
 
           .countdown-block{
+            font-size:20px;
+          }
+
+          .label{
             font-size:26px;
           }
     }
 
-      /*#date-countdown{
-        display: flex;
-        flex-flow: row wrap;
-      /*}**/
-
       .container{
-        height:100vh
+            height:100vh
     }      
 
       .navbar{
-        background-color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.6);
       }
 
       .btn-outline-white{
-        border-color:#ffffff;
-        color:#ffffff;
+            border-color:#ffffff;
+            color:#ffffff;
         }
 
        #oywlogo{
@@ -259,7 +274,7 @@
        }
 
        .trebuchet{
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-family: "Trebuschet MS", Helvetica, sans-serif;
        }
 
        #oywtitle{
@@ -267,7 +282,11 @@
        }
 
        #abouttitle{
-        font-size:4vmax;
+            font-size:4vmax;
+       }
+
+       #buytickets_pg{
+            background-color:#F8F7FA;;
        }
 
     </style>
