@@ -129,6 +129,18 @@
             e.preventDefault();
         });
 
+        $('.btn').mouseup(function(){
+            $(this).css("color", "white");
+        });
+
+        $('.btn').mouseover(function(){
+            $(this).css("color", "black");
+        });
+
+        $('.btn').mouseout(function(){
+            $(this).css("color", "white");
+        });
+
         $("#info_btn").click(function(){
           $("html,body").animate({
               scrollTop: $('#whatson_title').offset().top - $('body').offset().top + $('body').scrollTop()
