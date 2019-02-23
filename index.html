@@ -14,17 +14,18 @@
 
             <div class="container splash h-100">
                 <div class="row h-100 justify-content-center align-items-center">
-                    <div>
-                        <h1 class="text-center text-white display-3">
-                            One Young World Bath Caucus
-                        </h1>
-                        <div class="pt-2 ml-1 row justify-content-center">
-                                <button id="buyticket_btn" type="button" class="col-xs-6 col-md-2 m-1 btn btn-outline-white btn-rounded waves-effect">
-                                    Buy Ticket
-                                </button>
-                                <button id="info_btn" type="button" class=" col-xs-6 col-md-2 m-1 btn btn-outline-white ">
-                                    Information
-                                </button>
+                    <div class="text-center">
+                        <img id="oywlogo" class="mb-3" src="https://www.oneyoungworld.com/sites/oneyoungworld.com/files/logo_new_white_02.png">
+
+                        <h2 class="trebuchet text-white" id="oywtitle"> One Young World Bath Caucus 2019 </h2>
+
+                        <div class="row justify-content-center">
+                            <button id="buyticket_btn" type="button" class="col-xs-6 col-md-3 m-1 pl-1 pr-1 btn btn-outline-white">
+                                Buy Ticket
+                            </button>
+                            <button id="info_btn" type="button" class="col-xs-6 col-md-3 m-1 pl-1 pr-1 btn btn-outline-white">
+                                Information
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -203,7 +204,7 @@
         height: 100%;
     }
       .splash {
-        background-image:url(https://www.romanbaths.co.uk/sites/roman_baths/files/dsc8009-hdr.jpg);
+        background-image:url(https://i.imgur.com/QX5kidC.png);
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -250,15 +251,23 @@
       .btn-outline-white{
         border-color:#ffffff;
         color:#ffffff;
-      }
-
-    h2 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 70px; font-style: normal; font-variant: normal; font-weight: 700; }
-
-      h3 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 500; }
+    }
 
       .section-heading>h2>span{
         display: list-item;
         list-style: none;
+       }
+
+       #oywlogo{
+            width:40vmax;
+       }
+
+       .trebuchet{
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+       }
+
+       #oywtitle{
+            font-size:4vmax;
        }
 
     </style>
