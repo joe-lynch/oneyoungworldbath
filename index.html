@@ -60,35 +60,66 @@
                             <button id="buyticket_btn" type="button" class="col-xs-3 m-1 pl-1 pr-1 btn btn-outline-white">
                                 Get a Ticket
                             </button>
-                            <!--
-                            <button id="info_btn" type="button" class="col-xs-6 col-md-3 m-1 pl-1 pr-1 btn btn-outline-white">
+                            
+                            <button id="info_btn" type="button" class="col-xs-3 m-1 pl-1 pr-1 btn btn-outline-white">
                                 Information
                             </button>
-                            -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!--
+            
             <div id="whatson_title" class="container">
 
                     <div class="row">
                         <div class="mx-auto text-left">
-                            <h2 class="mt-2 trebuchet" id="abouttitle">About the Conference</h2>
+                            <h2 class="mt-2 trebuchet" id="abouttitle">About the Event</h2>
                         </div>
                     </div>
 
+                    <hr>
+                  
+                    <div class="row">
+                        <div class="col-7 pr-2">
+                            <p><strong>This exciting free event will consist of a series of international and domestic speaker talks, workshops, and networking opportunities.</strong></p>
 
+                            <p>The event will take place as a one day conference that will be held on the University of Bath campus, on the <strong>6th of April</strong>, with leading voices from business and society joining students and interested local attendees to share ideas and engage in discussions around the issues that we face both domestically and internationally.</p>
 
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <hr>
-                            <strong> --- Work in progress --- </strong>
+                            <p>The conference will be composed of a series of succinct speaker talks discussing issues aligned with the One Young World values and the UN Sustainable Development Goals.</p>
+
+                            <p>This event is run by the University of Bath in partnership with One Young World, a global organisation that focuses on harnessing the power of young leaders, who demonstrate leadership ability and a commitment to effecting positive change.</p>
+
+                            <p>In the spirit of promoting access to all, <strong>attendance at the Caucus is free</strong> with a deposit of £10 which is refundable upon checking-in.</p>
+                        </div>
+                        <div class="col-5 pl-5">
+                            <div class="row no-gutters">
+                                <p class="neg-margin lead">Date and Time</p>
+                                <hr style="width:100%; display:block">
+                                <p>Saturday 6th of April<br>
+                                10:00 - 16:00</p>
+                            </div>
+                            <div class="row no-gutters pt-3">
+                                <p class="neg-margin lead">Location</p>
+                                <hr style="width:100%; display:block">
+                                <p>Chancellor's Building<br>
+                                   University of Bath<br>
+                                   Claverton Down<br>
+                                   BA2 7AY<br>
+                                   <div style="width: 100%"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=Chancellor's%20Building%2C%20University%20of%20Bath%2C%20Claverton%20Down%2C%20Bath%2C%20BA2%207AY+(One%20Young%20World%20Bath)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div><br/>
+                                </p>
+
+                            </div>
                         </div>
                     </div>
-
+            </div>
+                        <!--
+                        <video id="video" controls>
+                            <source src="" type="video/mp4">    
+                        </video>
                     
+                    </div>
                         
             </div>
                 
@@ -109,7 +140,7 @@
 
             </div>
             
-            <!-- Main navigation -->
+  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -230,6 +261,10 @@
         width:45vmax;
     }
 
+    #info_btn{
+        width:45vmax;
+    }
+
 
      @media only screen and (max-width: 576px) {
 
@@ -242,6 +277,9 @@
           }
 
           #buyticket_btn{
+            width:45vmax;
+        }
+         #info_btn{
             width:45vmax;
         }
     }
@@ -259,6 +297,9 @@
           #buyticket_btn{
             width:25vmax;
         }
+         #info_btn{
+            width:25vmax;
+     }
     }
 
     @media only screen and (min-width: 992px) {
@@ -274,10 +315,13 @@
           #buyticket_btn{
             width:25vmax;
         }
+         #info_btn{
+            width:25vmax;
+        }
     }
 
       .container{
-            height: 100vh
+
     }      
 
       .navbar{
@@ -312,6 +356,26 @@
        #buytickets_pg{
             background-color:#F8F7FA;;
        }
+
+       #video{
+            width:53.1vmax;  /* 1.77 */
+            height:30vmax;   /*  1   */ 
+       }
+
+       .no-gutters {
+          margin-right: 0;
+          margin-left: 0;
+
+          > .col,
+          > [class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+
+        .neg-margin{
+            margin-bottom:-5px;
+        }
 
     </style>
 
