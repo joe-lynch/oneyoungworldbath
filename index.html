@@ -17,7 +17,46 @@
                     <div class="text-center">
                         <img id="oywlogo" class="mb-3" src="https://www.oneyoungworld.com/sites/oneyoungworld.com/files/logo_new_white_02.png">
 
-                        <h2 class="trebuchet text-white" id="oywtitle"> One Young World Bath Caucus 2019 </h2>
+                        <h2 class="trebuchet text-white" id="oywtitle"> One Young World Bath Caucus 2019
+                        </h2>
+
+                        <div id="date-countdown" class="mb-3 mt-3 row justify-content-center">
+
+                                <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
+                                    <span id="weeks" class="label">
+                                        0
+                                    </span>
+                                    weeks
+                                </div>
+
+                                <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
+                                    <span id="days" class="label">
+                                        0
+                                    </span>
+                                     days 
+                                </div>
+
+                                <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
+                                    <span id="hours" class="label">
+                                        0
+                                    </span>
+                                    hours
+                                </div>
+
+                                <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
+                                    <span id="minutes" class="label">
+                                        0
+                                    </span>
+                                        mins
+                                </div>
+                                
+                                <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
+                                    <span id="seconds" class="label">
+                                        0
+                                    </span>
+                                 secs
+                                </div>
+                        </div>
 
                         <div class="row justify-content-center">
                             <button id="buyticket_btn" type="button" class="col-xs-6 col-md-3 m-1 pl-1 pr-1 btn btn-outline-white">
@@ -41,66 +80,27 @@
                 </h1>
             -->
 
-                <div id="whatson_title" class="container h-100">
+            <div id="whatson_title" class="container">
+
                     <div class="row">
-                        <div class="col-md-7 mx-auto text-left section-heading">
-                            <h2 class="mb-5 text-uppercase">About The <span>Conference</span></h2>
+                        <div class="mx-auto text-left">
+                            <h2 class="mt-5 trebuchet" id="abouttitle">About the Conference</h2>
                         </div>
                     </div>
+
+
+
                     <div class="row justify-content-center">
-                        <div class="col-7">
-                            <h3 class="regular-font-size text-uppercase mb-3">Conference Begins In</h3>
-
-                            <div id="date-countdown" class="mb-4 mt-3">
-
-                                <span class="countdown-block lead">
-                                    <span id="weeks" class="label">
-                                        85
-                                    </span>
-                                    weeks
-                                </span>
-
-                                <span class="countdown-block lead">
-                                    <span id="days" class="label">
-                                        01
-                                    </span>
-                                     days 
-                                </span>
-
-                                <span class="countdown-block lead">
-                                    <span id="hours" class="label">
-                                        07
-                                    </span>
-                                    hours
-                                 </span>
-
-                                 <span class="countdown-block lead">
-                                    <span id="minutes" class="label">
-                                        36
-                                    </span>
-                                        mins
-                                </span>
-                                
-                                <span class="countdown-block lead">
-                                    <span id="seconds" class="label">
-                                    22
-                                    </span>
-                                 secs
-                                </span>
-
-                                <span class="ghost-item"></span>
-                                <span class="ghost-item"></span>
-                                <span class="ghost-item"></span>
-                                <span class="ghost-item"></span>
-                                <span class="ghost-item"></span>
-                                <span class="ghost-item"></span>
-                            </div>
-                        
-                            </div>
+                        <div class="col-12">
+                            <hr>
+                            At the heart of every global threat is a failure of leadership. This new generation is the most informed, most educated, most connected generation in human history. One Young World identifies, promotes and connects the world’s most impactful young leaders to create a better world, with more responsible, more effective leadership.
                         </div>
                     </div>
-                </div>
-            <!--</div>-->
+
+                    
+                        
+            </div>
+
 
             <div class="container h-100">
 
@@ -212,33 +212,23 @@
       }
 
       .countdown-block{
-        border:1px solid grey;
-        border-radius: 15px;
-        flex-basis: 100px;
-        flex-grow: 1;
-        height: auto;
-        margin: 10px;
         text-align: center;
-        padding-top:15px;
-        padding-bottom:15px;
-        font-size:25px;
-      }
+        font-size:12px;
+        color:white;
+        width:6vmax;
 
-      .ghost-item {
-        flex-basis: 100px;
-        flex-grow: 1;
-        margin: 0 10px;
       }
 
       .label{
-        color:red;
+        color:white;
         display:block;
+        font-size:20px;
       }
 
-      #date-countdown{
+      /*#date-countdown{
         display: flex;
         flex-flow: row wrap;
-      }
+      /*}**/
 
       .container{
         height:100vh
@@ -251,12 +241,7 @@
       .btn-outline-white{
         border-color:#ffffff;
         color:#ffffff;
-    }
-
-      .section-heading>h2>span{
-        display: list-item;
-        list-style: none;
-       }
+        }
 
        #oywlogo{
             width:40vmax;
@@ -268,6 +253,10 @@
 
        #oywtitle{
             font-size:4vmax;
+       }
+
+       #abouttitle{
+        font-size:4vmax;
        }
 
     </style>
