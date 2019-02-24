@@ -5,6 +5,7 @@
         <title>One Young World Bath</title>
         <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" href="logo.ico" />
     </head>
 
@@ -77,7 +78,7 @@
 
                         <div class="row">
                             <div class="mx-auto text-left">
-                                <h2 class="mt-4 trebuchet" id="abouttitle">About the Event</h2>
+                                <h2 class="mt-4 trebuchet" id="abouttitle"><strong>About the Event</strong></h2>
                             </div>
                         </div>
 
@@ -95,7 +96,7 @@
 
                                 <p>In the spirit of promoting access to all, <strong>attendance at the Caucus is free</strong> with a deposit of £10 which is refundable upon checking-in.</p>
 
-                                <div class="pt-3 row">
+                                <div class="pt-3 row d-none d-md-inline-flex">
                                     <div class="col-xs-12 col-md-4">
                                         <img class="img-fluid img-responsive d-none d-md-block" src="black_health_and_development.png">
                                     </div>
@@ -136,7 +137,7 @@
 
                         </div>
 
-                        <div class="pt-3 row">
+                        <div class="row pt-3 pb-3">
                             <div class="col-4">
                                 <img class="img-fluid img-responsive d-md-none" src="black_health_and_development.png">
                             </div>
@@ -230,24 +231,28 @@
             -->
 
             <div class="container-fluid h-100" id="buytickets_pg">
-                <div class="container">
+                <div class="container h-100">
 
                     <div class="row">
                         <div class="mx-auto text-left">
-                            <h2 class="mt-4 trebuchet" id="buytickets_title">Get Your Ticket Now</h2>
+                            <h2 class="mt-4 trebuchet" id="buytickets_title"><strong>Get Your Ticket Now</strong></h2>
 
                         </div>
                     </div>
 
                     <hr>
 
-                    <div class="w-100 align-items-center pt-1">
-                        <iframe src="https://eventbrite.co.uk/tickets-external?eid=53584079424&ref=etckt" frameborder="0" height="600px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+                    <div class="align-items-center pt-1">
+                        <iframe class="item" src="https://eventbrite.co.uk/tickets-external?eid=53584079424&ref=etckt" frameborder="0" width=100% height=600px vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
                         </iframe>
                     </div>
 
                 </div>
 
+            </div>
+
+            <div>
+            <hr>
             </div>
             
   
@@ -256,226 +261,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 
     </body>
 
-    <script>
-
-        $(".btn").mousedown(function(e){
-            e.preventDefault();
-        });
-
-        $('.btn').mouseup(function(){
-            $(this).css("color", "white");
-        });
-
-        $('.btn').mouseover(function(){
-            $(this).css("color", "black");
-        });
-
-        $('.btn').mouseout(function(){
-            $(this).css("color", "white");
-        });
-
-        $("#info_btn").click(function(){
-          $("html,body").animate({
-              scrollTop: $('#about_pg').offset().top - $('body').offset().top + $('body').scrollTop()
-          });
-        });
-
-        $("#buyticket_btn").click(function(){
-            $("html,body").animate({
-              scrollTop: $('#buytickets_pg').offset().top - $('body').offset().top + $('body').scrollTop()
-          });
-        });
-
-        CountDownTimer('04/06/2019 10:00 AM', 'countdown');
-
-        function CountDownTimer(dt, id)
-        {
-
-            var end = new Date(dt);
-
-            var _second = 1000;
-            var _minute = _second * 60;
-            var _hour = _minute * 60;
-            var _day = _hour * 24;
-            var _week = _day * 7;
-
-            var timer;
-
-            function showRemaining() {
-
-                var now = new Date();
-                var distance = end - now;
-
-                if (distance < 0) {
-
-                    clearInterval(timer);
-                    document.getElementById("#date-countdown").innerHTML = 'THE EVENT HAS STARTED';
-
-                    return;
-                }
-
-                var weeks = Math.floor(distance / _week);
-
-                var days = Math.floor((distance % _week) / _day);
-                var hours = Math.floor((distance % _day) / _hour);
-                var minutes = Math.floor((distance % _hour) / _minute);
-                var seconds = Math.floor((distance % _minute) / _second);
-           
-                document.getElementById("weeks").innerHTML = weeks;
-                document.getElementById("days").innerHTML = days;
-                document.getElementById("hours").innerHTML = hours;
-                document.getElementById("minutes").innerHTML = minutes
-                document.getElementById("seconds").innerHTML = seconds;
-            }
-
-            timer = setInterval(showRemaining, 1000);
-            
-
-        }
-        /*
-        $("#buyticket_btn").click(function(){
-            window.location.href="https://www.eventbrite.co.uk/e/one-young-world-bath-caucus-2019-tickets-53584079424";
-        })
-        */
-
-    </script>
 
     <style>
 
-    body, html {
-        height: 100%;
-    }
-      .splash {
-        background-image:url(web_bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        max-width: 100%;
-      }
-
-      .countdown-block{
-        text-align: center;
-        color:white;
-        width:8vmax;
-      }
-
-      .label{
-        color:white;
-        display:block;
-    }
-
-    #buyticket_btn, #info_btn{
-        width:45vmax;
-    }
-
-
-
-     @media only screen and (max-width: 576px) {
-
-          .countdown-block{
-            font-size:14px;
-          }
-
-          .label{
-            font-size:20px;
-          }
-
-          #buyticket_btn, #info_btn{
-            width:45vmax;
-        }
-        .speakerTitle{
-            font-size:4vmax;
-        }
-
-    }
-
-    @media only screen and (min-width: 576px) {
-
-          .countdown-block{
-            font-size:14px;
-          }
-
-          .label{
-            font-size:20px;
-          }
-
-          #buyticket_btn, #info_btn{
-            width:25vmax;
-        }
-
-        .speakerTitle{
-            font-size:4vmax;
-        }
-
-    }
-
-    @media only screen and (min-width: 992px) {
-
-          .countdown-block{
-            font-size: 20px;
-          }
-
-          .label{
-            font-size: 26px;
-          }
-
-          #buyticket_btn, #info_btn{
-            width:25vmax;
-        }
-
-        .speakerTitle{
-            font-size:2vmax;
-        }
-    }
-     
-
-      .navbar{
-            background-color: rgba(255, 255, 255, 0.6);
-      }
-
-      .btn-outline-white{
-            border-color:#ffffff;
-            color:#ffffff;
-        }
-
-       #oywlogo{
-            width: 40vmax;
-       }
-
-       .trebuchet{
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-       }
-
-       #buytickets_title, #abouttitle, #oywtitle{
-            font-size: 4vmax;
-       }
-
-       #buytickets_pg, #about_pg{
-            background-color:#F8F7FA;
-       }
-
-       #video{
-            width:53.1vmax;  /* 1.77 */
-            height:30vmax;   /*  1   */ 
-       }
-
-       .no-gutters {
-          margin-right: 0;
-          margin-left: 0;
-
-          > .col,
-          > [class*="col-"] {
-            padding-right: 0;
-            padding-left: 0;
-          }
-        }
-
-        .neg-margin{
-            margin-bottom:-5px;
-        }
+   
 
 
 
