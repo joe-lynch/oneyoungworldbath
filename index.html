@@ -118,7 +118,7 @@
                                     <p class="neg-margin lead">Date and Time</p>
                                     <hr style="width:100%; display:block">
                                     <p>Saturday 6th of April<br>
-                                    10:00 - 16:00</p>
+                                    09:30 - 17:30</p>
                                 </div>
                                 <div class="row no-gutters pt-3">
                                     <p class="neg-margin lead">Location</p>
@@ -148,18 +148,25 @@
                             </div>
                         </div>
 
+
+                        <div class="text-center mt-4">
+                            <h3 class="trebuchet"><strong>Keynote Speakers</strong></h3>
+                            <hr
+                        </div>
+
                         <div class="row">
                             <div class="imgwrapper col-sm-12 col-md-6">
                                 <img class="img-fluid img-responsive" src="MaryPhoto.png"">
                             </div>
 
                             <div class="col-sm-12 col-md-6 d-flex flex-column">
-                                <div class="d-none d-sm-block" style="height:2.5vmax;">
+                                <div class="d-none d-md-block" style="height:2.5vmax;">
 
                                 </div>
 
                                 <div>
-                                    <p class="trebuchet"><strong>Mary Akongo</strong></p>
+                                    <p class="trebuchet speakerTitle lead"><strong>Mary Akongo</strong></p>
+                                    <hr>
                                 </div>
 
                                 <div class="text-justify">
@@ -169,8 +176,48 @@
 
                             </div>
                         </div>
+
+                        <div class="row">
+
+                            <div class="imgwrapper col-sm-12 col-md-6 order-xs-1 order-md-2">
+                                <img class="img-fluid img-responsive" src="CarolinePhoto.png"">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 d-flex flex-column">
+                                <div class="d-none d-md-block" style="height:2.5vmax;">
+
+                                </div>
+
+                                <div>
+                                    <p class="trebuchet speakerTitle lead"><strong>Caroline Casey</strong></p>
+                                    <hr>
+                                </div>
+
+                                
+
+                                <div class="text-justify">
+                                    <p>Caroline Casey is an award-winning social entrepreneur and founder of <strong>#valuable</strong> - a catalyst for an inclusion revolution that exists to position disability equally on the global business leadership agenda.</p>
+                                    <p>Committed to building a global movement on inclusive business for the 1.3 billion people in the world with a disability, over the past two decades she has set up several organisations and initiatives centred on <strong>disability business inclusion</strong>.</p>
+                                    <p>Her latest initiative, <strong>The Valuable 500</strong>, is an ambitious year-long campaign to get 500 businesses to commit to put disability inclusion on their leadership agendas. Launched at this year’s World Economic Forum Annual Summit, Casey succeeded in bringing disability inclusion onto the main stage at <strong>DAVOS</strong> for the first time ever with the support of global business leaders.</p>
+                                    <p>The Valuable 500 is supported by a host of global leaders including Sir Richard Branson, and Paul Polman, and global brands including Virgin Media and Omnicom. 
+                                    Casey is also a TED speaker, Ashoka Fellow, Eisenhower Fellow, a past advisor for the Clinton Global Initiative, a <strong>One Young World Counsellor</strong> and is a Young Global Leader of the World Economic Forum.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="jumbotron watch-this-space">
+                            <p>Session speakers and panelists to be announced.</p>
+                            <p>Questions? Contact us at
+                                <a href="mailto:ticketing@oneyoungworldbath.com" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#6097AB; text-decoration:underline;">ticketing@oneyoungworldbath.com
+                                </a>
+                            </p>
+                        </div>
                 </div>
+
             </div>
+            <hr>
                         <!--
                         <video id="video" controls>
                             <source src="" type="video/mp4">    
@@ -183,17 +230,23 @@
             -->
 
             <div class="container-fluid h-100" id="buytickets_pg">
+                <div class="container">
 
-                <div id="buytickets_title" class="pt-3 trebuchet text-center display-3">
-                        Get Your Ticket Now
+                    <div class="row">
+                        <div class="mx-auto text-left">
+                            <h2 class="mt-4 trebuchet" id="buytickets_title">Get Your Ticket Now</h2>
+
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="w-100 align-items-center pt-1">
+                        <iframe src="https://eventbrite.co.uk/tickets-external?eid=53584079424&ref=etckt" frameborder="0" height="600px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+                        </iframe>
+                    </div>
+
                 </div>
-
-                <div class="w-100 align-items-center pt-3">
-                    <iframe src="https://eventbrite.co.uk/tickets-external?eid=53584079424&ref=etckt" frameborder="0" height="600px" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
-                    </iframe>
-                </div>
-
-
 
             </div>
             
@@ -226,13 +279,13 @@
 
         $("#info_btn").click(function(){
           $("html,body").animate({
-              scrollTop: $('#whatson_title').offset().top - $('body').offset().top + $('body').scrollTop()
+              scrollTop: $('#about_pg').offset().top - $('body').offset().top + $('body').scrollTop()
           });
         });
 
         $("#buyticket_btn").click(function(){
             $("html,body").animate({
-              scrollTop: $('#buytickets_title').offset().top - $('body').offset().top + $('body').scrollTop()
+              scrollTop: $('#buytickets_pg').offset().top - $('body').offset().top + $('body').scrollTop()
           });
         });
 
@@ -333,6 +386,9 @@
           #buyticket_btn, #info_btn{
             width:45vmax;
         }
+        .speakerTitle{
+            font-size:4vmax;
+        }
 
     }
 
@@ -350,6 +406,10 @@
             width:25vmax;
         }
 
+        .speakerTitle{
+            font-size:4vmax;
+        }
+
     }
 
     @media only screen and (min-width: 992px) {
@@ -364,6 +424,10 @@
 
           #buyticket_btn, #info_btn{
             width:25vmax;
+        }
+
+        .speakerTitle{
+            font-size:2vmax;
         }
     }
      
@@ -412,6 +476,8 @@
         .neg-margin{
             margin-bottom:-5px;
         }
+
+
 
         
 
