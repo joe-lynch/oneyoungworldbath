@@ -42,10 +42,6 @@
         .speakerTitle{
             font-size:4vmax;
         }
-        .item{
-        height:1000px;
-        width:100%;
-     }
 
     }
 
@@ -66,10 +62,6 @@
         .speakerTitle{
             font-size:4vmax;
         }
-        .item{
-        height:600px;
-        width:100%;
-     }
 
     }
 
@@ -91,10 +83,6 @@
             font-size:2vmax;
         }
 
-        .item{
-        height:600px;
-        width:100%;
-     }
     }
      
 
@@ -142,8 +130,3 @@
         .neg-margin{
             margin-bottom:-5px;
         }
-
-     .item{
-        height:600px;
-        width:100%;
-     }
