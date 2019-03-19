@@ -137,9 +137,16 @@
           border-radius: .3rem;
           margin-bottom: 2rem;
           padding: 2rem 0rem 1rem;
+          border: 1px red solid;
         }
 
         .img-wrapper-healthdevelopmentpanel img{
           height:255px;
           width:255px;
         }
+
+        .refund_text{
+          color:red;
+        }
+
+
