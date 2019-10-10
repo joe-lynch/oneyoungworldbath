@@ -37,12 +37,8 @@
             font-size:20px;
           }
 		  
-		  
-		  .barchart{
-			width:100%;
-			height:100%;
-		  }
-
+		 
+		
           #buyticket_btn, #info_btn{
             width:45vmax;
         }
@@ -62,10 +58,10 @@
             font-size:20px;
           }
 
-
           #buyticket_btn, #info_btn{
             width:25vmax;
         }
+		
 
         .speakerTitle{
             font-size:4vmax;
@@ -86,7 +82,7 @@
           #buyticket_btn, #info_btn{
             width:25vmax;
         }
-
+		
 
         .speakerTitle{
             font-size:1.5vmax;
@@ -156,4 +152,5 @@
         .refund_text{
           color:red;
         }
+
 
