@@ -81,7 +81,7 @@
         }
 
         .speakerTitle{
-            font-size:2vmax;
+            font-size:1.5vmax;
         }
 
     }
@@ -104,10 +104,10 @@
             font-family: "Trebuchet MS", Helvetica, sans-serif;
        }
 
-       #buytickets_title, #abouttitle, #oywtitle{
-            font-size: 4vmax;
+       #buytickets_title, #oywtitle{
+            font-size: 3vmax;
        }
-
+	   
        #buytickets_pg, #about_pg{
             background-color:#F8F7FA;
        }
@@ -149,4 +149,12 @@
           color:red;
         }
 
-
+		.barchart{
+		  width:600px;
+		  height:175px;
+		}
+		
+		.piechart{
+		  width:600px;
+		  height:323px;
+		}
