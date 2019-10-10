@@ -37,7 +37,10 @@
             font-size:20px;
           }
 		  
-		 
+		 .sdg{
+		    padding-right: 5px;
+			padding-left: 5px;
+		}
 		
           #buyticket_btn, #info_btn{
             width:45vmax;
