@@ -38,8 +38,8 @@
           }
 		  
 		 .sdg{
-		    padding-right: 5px;
-			padding-left: 5px;
+		    padding-right: 5px !important;
+			padding-left: 5px !important;
 		}
 		
           #buyticket_btn, #info_btn{
