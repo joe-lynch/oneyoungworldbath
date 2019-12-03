@@ -7,24 +7,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="logo.ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta property="og:title" content="One Young World Bath" />
     <meta property="og:image" content="thumbnail_resized.png" />
     <meta property="og:description" content="This exciting free event will consist of a series of international and domestic speaker talks, workshops, and networking opportunities." />
     <meta property="og:url" content="https://oneyoungworldbath.com" />
-
 </head>
 
 
 <body>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+
+	<!-- ###########   START of the TITLE page 	 ###########-->
     <div class="container splash h-100">
         <div class="row h-100 justify-content-center align-items-center">
             <div class="text-center">
+			
+				<!-- oyw logo -->
                 <img id="oywlogo" class="mb-3" src="oyw_logo.png">
-
+				
+				<!-- The title, trebuchet is the font -->
                 <h2 class="trebuchet text-white" id="oywtitle">
-                    One Young World Bath Caucus 2019
+                    One Young World Bath Caucus 2020
                 </h2>
-			<!--
+				
+				<!-- START of the countdown, this code manages the countdown - comment it out or delete it to remove the countdown -->
                 <div id="date-countdown" class="mb-3 mt-3 row justify-content-center">
 
                     <div class="countdown-block trebuchet lead col-xs-1 pl-2 pr-2 ml-2 mr-2">
@@ -62,318 +70,441 @@
                         secs
                     </div>
                 </div>
-			-->
+				<!-- END of the countdown -->
+				
+				<!-- START of the information button -->
                 <div class="row justify-content-center">
-                    
                     <button id="info_btn" type="button" class="col-xs-3 m-1 pl-1 pr-1 btn btn-outline-white">
                         Information
                     </button>
-
                 </div>
+				<!-- END of the information button -->
             </div>
         </div>
     </div>
+	<!-- ###########   END of the TITLE page  ###########-->
 
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 
-    <div class="container-fluid" id="about_pg">
+	<!-- START of the rest of the page -->
+    <div class="container-fluid" id="page_pg">
         <div id="whatson_title" class="container">
-            <div class="row">
 			
+			<!-- ###########	START of the ABOUT THE EVENT page	###########-->
+			
+			<!-- The title -->
+            <div class="row">
                 <div class="mx-auto text-left">
                     <h2 class="mt-4 trebuchet" id="abouttitle"><strong>About the Event</strong></h2>
                 </div>
             </div>
-
+			
+			<!-- line under the title -->
             <hr>
-
+			
+			
+			<!-- Description of the event, putting text between <p> and </p> makes a paragraph -->
+			<!-- <strong> </strong> makes the text bold (you can also use <b> </b>) -->
             <div class="row" id="cont">
+			
+				<!-- START of the text description on the left side of the page -->
                 <div class="col-sm-7 text-justify">
-                    <p><strong>This exciting free event consisted of a series of international and domestic speaker talks, workshops, and networking opportunities.</strong></p>
+                    <p>
+						<strong>
+							This exciting free event consists of a series of international and domestic speaker talks, workshops, and networking opportunities.
+						</strong>
+					</p>
 
-                    <p>The event took place as a one day conference that was held on the University of Bath campus, on the <strong>6th of April</strong>, with leading voices from business and society joining students and interested local attendees to share ideas and engage in discussions around the issues that we face both domestically and internationally.</p>
+                    <p>
+						The event takes place on the University of Bath campus, as a one day conference, on the <strong>7th of March</strong>. Leading voices from business and society join students 
+					    and interested local attendees in order to share ideas and engage in discussions around the issues that we face both domestically and internationally.
+					</p>
 
-                    <p>The conference was composed of a series of succinct speaker talks that discussed issues aligned with the One Young World values and the UN Sustainable Development Goals.</p>
+                    <p>
+						The conference is composed of a series of succinct speaker talks and follow-up workshops that encourage discussions on issues aligned with the One Young World values and the
+						UN Sustainable Development Goals.
+					</p>
 
-                    <p>This event was run by the University of Bath in partnership with One Young World, a global organisation that focuses on harnessing the power of young leaders, who demonstrate leadership ability and a commitment to effecting positive change.</p>
-
-                    <p>In the spirit of promoting access to all, <strong>attendance at the Caucus was free with a refundable deposit of &#163;10.</strong></p>
-
-                    <div class="pt-3 row d-none d-md-inline-flex">
-                        <div class="col-xs-12 col-md-4">
-                            <img class="img-fluid img-responsive d-none d-md-block" src="black_health_and_development.png">
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <img class="img-fluid img-responsive d-none d-md-block" src="black_sustainability_and_environment.png">
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <img class="img-fluid img-responsive d-none d-md-block" src="black_equality_and_inclusion.png">
-                        </div>
-                    </div>
-
-
+                    <p>
+						This event is by the University of Bath in partnership with One Young World, a global organisation that focuses on harnessing the power of young leaders, who demonstrate 
+						leadership ability and a commitment to effecting positive change. This year in particular, we’re witnessing an inaugural partnership between the School of Sciences and the
+						School of Management. 
+					</p>
+					
+					
+					<!-- This includes the SDGs under the description text - it only appears when the screen is not small, otherwise the section (below) for the SDGs is used instead! -->
+					<!-- I did this because it looked bad with a massive empty gap after the text, and the map on the right -->
+					<div class="row text-center d-none d-md-block">
+						<hr>
+						<h5 class="trebuchet"><strong>Our Sustainable Development Goals</strong></h5>
+						<hr>
+					</div>
+					
+					<!-- First row of sustainable development squares -->
+					<div class="row mb-md-3 justify-content-center d-none d-md-inline-flex">
+						<!-- SDG 4 -->
+						<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
+							<img class="img-fluid img-responsive" src="sdg4.png">
+						</div>
+						
+						<!-- SDG 5 -->
+						<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
+							<img class="img-fluid img-responsive" src="sdg5.png">
+						</div>
+					</div>
+					
+					<!-- Second row of sustainable development squares -->
+					<div class="row mb-3 justify-content-center d-none d-md-inline-flex">
+						<!-- SDG 13 -->
+						<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
+							<img class="img-fluid img-responsive" src="sdg13.png">
+						</div>
+						
+						<!-- SDG 16 -->
+						<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
+							<img class="img-fluid img-responsive" src="sdg16.png">
+						</div>
+					</div>
+					
                 </div>
-
-                <div class="col-sm-1">
-                </div>
-
+				<!-- END of the text description on the left -->
+				
+				<!-- Makes a small gap between the left and right of the page -->
+                <div class="col-sm-1"></div>
+				
+				<!-- START of the right side of the page -->
                 <div class="col-sm-4 order-first order-sm-last mb-3">
+				
+					<!-- The date and the time, <em> </em> makes the text italic (you can also use <i> </i>) -->
                     <div class="row no-gutters">
                         <p class="neg-margin lead">Date and Time</p>
                         <hr style="width:100%; display:block">
                         <p>
-                            Saturday 6th of April<br>
-                            09:30 - 17:30
+                            Saturday 7th of March 2020<br>
+                            <em>Time to be confirmed</em>
                         </p>
                     </div>
+					
+					<!-- The location -->
                     <div class="row no-gutters pt-3">
                         <p class="neg-margin lead">Location</p>
                         <hr style="width:100%; display:block">
                         <p>
-                            Chancellor's Building<br />
-                            University of Bath<br />
-                            Claverton Down<br />
-                            BA2 7AY<br />
-                            <!--<a href="https://goo.gl/maps/qSpxrJXuhsQ2">View on Google Maps</a>-->
-
+                            Chancellor's Building<br/>
+                            University of Bath<br/>
+                            Claverton Down<br/>
+                            BA2 7AY<br/>
+							
+							<!-- includes the map -->
                             <div style="width: 100%">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2490.2507153701226!2d-2.3280126!3d51.38007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487181bbc3547451%3A0x68f654cf3ec6a8fb!2sChancellors&#39;+Building!5e0!3m2!1sen!2suk!4v1551212187937" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div></br>
 
                         </p>
-
+                    </div>
+					
+					<!-- Social media -->
+					<div class=" no-gutters ptt-5">
+                        <p class="neg-margin lead">Social Media</p>
+                        <hr style="width:100%; display:block">
+			
+						
+						<!-- Add icons -->
+						<div class="row no-gutters justify-content-center">
+							<a href="https://www.facebook.com/OneYoungWorldBath/" class="col-4 fa fa-facebook"></a>
+							<a href="https://twitter.com/oywbath" class="col-4 fa fa-twitter"></a>
+							<a href="https://www.instagram.com/oywbath/" class="col-4 fa fa-instagram"></a>
+						</div>
+						<hr class="d-md-none" style="width:100%; display:block">
                     </div>
 
                 </div>
-
-            </div>
-
-            <div class="row pt-3 pb-3">
-                <div class="col-4">
-                    <img class="img-fluid img-responsive d-md-none" src="black_health_and_development.png">
-                </div>
-                <div class="col-4">
-                    <img class="img-fluid img-responsive d-md-none" src="black_sustainability_and_environment.png">
-                </div>
-                <div class="col-4">
-                    <img class="img-fluid img-responsive d-md-none" src="black_equality_and_inclusion.png">
-                </div>
+				<!-- END of the right side of the page -->
             </div>
 			
-			<div class="text-center mt-4">
+
+			<!-- ###########	END of the ABOUT THE EVENT page		###########-->
+			
+			
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+			
+			
+			<!-- ###########	START of the SDG page	###########-->
+			<!-- This is only shown on small screens - otherwise it is shown beneath the description text (explained above) -->
+			
+			<!-- The title -->
+			<div class="text-center mt-4 d-md-none">
 				<hr>
                 <h3 class="trebuchet"><strong>Our Sustainable Development Goals</strong></h3>
                 <hr>
             </div>
 			
-			<div class="row mb-md-3 justify-content-center">
+			
+			<!-- First row of sustainable development squares -->
+			<div class="row mb-md-3 justify-content-center d-md-none">
+			
+				<!-- SDG 4 -->
                 <div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
-                    <img class="img-fluid img-responsive" src="sdg3.png">
+                    <img class="img-fluid img-responsive" src="sdg4.png">
                 </div>
 				
+				<!-- SDG 5 -->
 				<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
-                    <img class="img-fluid img-responsive" src="sdg10.png">
+                    <img class="img-fluid img-responsive" src="sdg5.png">
                 </div>
 				
-				<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
-                    <img class="img-fluid img-responsive" src="sdg11.png">
-                </div>
 			</div>
 			
-			<div class="row mb-3 justify-content-center">	
+			<!-- Second row of sustainable development squares -->
+			<div class="row mb-3 justify-content-center d-md-none">
+				
+				<!-- SDG 13 -->
 				<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
                     <img class="img-fluid img-responsive" src="sdg13.png">
                 </div>
 				
+				<!-- SDG 16 -->
 				<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
-                    <img class="img-fluid img-responsive" src="sdg14.png">
+                    <img class="img-fluid img-responsive" src="sdg16.png">
                 </div>
 				
-				<div class="imgwrapper mb-2 col-4 col-lg-3 sdg">
-                    <img class="img-fluid img-responsive" src="sdg17.png">
-                </div>
             </div>
 			
-			
-			<div class="text-center mt-4">
-				<hr>
-                <h3 class="trebuchet"><strong>Statistics</strong></h3>
-                <hr>
-            </div>
-			
-			<div>
-				<ul class="text-justify">
-					<li class="trebuchet">Over 9 in 10 survey respondents said that they had learnt more about <strong>UN Sustainable Development
-					Goals</strong> as a result of attending.</li>
-					
-					<li class="trebuchet">Every single survey respondent said they <strong>felt inspired to take action</strong> as a result of attending the 
-					One Young World Bath Caucus.</li>
-					
-					<li class="trebuchet">100% of survey respondents agreed or strongly agreed that they thought the <strong>event was well organised.</strong></li>
-				</ul>
-			
-				<div class="text-center mt-4">
-					<hr>
-					<h3 class="trebuchet"><strong>Attendance Breakdown</strong></h3>
-					<hr>
-				</div>
-			
-				<div class="row">
-					<div class="imgwrapper col-12 mb-4 col-md-6 mb-md-2 d-flex">
-						<img class="img-fluid img-responsive justify-content-center align-self-center barchart" src="ugpg_bar.png">
-					</div>
-				
-					<div class="imgwrapper col-sm-12 col-md-6 d-flex">
-						<img class="img-fluid img-responsive justify-content-center align-self-center piechart" src="piechart.png">
-					</div>
-				</div>
-			
-			</div>
+			<!-- ###########	END of the SDG page		###########-->
 			
 			
-
-
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+			
+			
+			<!-- ###########	START of the KEYNOTE SPEAKER page		###########-->
+			
+			
+			<!-- The title -->
             <div class="text-center mt-4">
 				<hr>
                 <h3 class="trebuchet"><strong>Keynote Speakers</strong></h3>
                 <hr>
             </div>
-
-            <div class="row">
-                <div class="imgwrapper col-sm-12 col-md-6">
-                    <img class="img-fluid img-responsive" src="MaryPhoto.png">
+			
+			
+			<!-- CHRIS HEMMINGS -->
+			
+			<div class="row">
+			
+				<!-- The photo of chris hemmings -->
+                <div class="imgwrapper col-sm-12 col-md-6 mb-2">
+                    <img class="img-fluid img-responsive mtt-5" src="ChrisPhoto.jpg">
                 </div>
-
+				
+				<!-- The description of chris hemmings -->
                 <div class="col-sm-12 col-md-6 d-flex flex-column">
                     <div class="d-none d-md-block" style="height:2.5vmax;">
 
                     </div>
+					
+					<!-- The title -->
+                    <div>
+                        <p class="trebuchet speakerTitle lead"><strong>Chris Hemmings</strong></p>
+                        <hr>
+                    </div>
+					
+					<!-- The text description -->
+                    <div class="text-justify">
+						<p>
+							Based on experiences from his own life, and research from his book, Chris Hemmings explores how certain aspects of masculine expectation,
+							the male pursuit of dominance and toxic masculinity are not only damaging individual men and boys, but women and girls, too.
+						</p>
+						
+						<p>
+							Chris's talk will focus on sexual violence and toxic masculinity with the opportunity for Q&amp;A, in support of some of the University’s campaigns such as 
+							#NeverOK. It’s based on his own personal story and the mistakes he made as part of his involvement in university rugby culture, and his battle with how
+							macho tropes damaged his sense of self and took him places he is now ashamed of.
+						</p>
+						
+						<p>
+							Chris wants to promote a healthier idea of what it means to be a man. For men and boys to critically examine their own behaviour, and recognise they have the
+							power to help their brothers overcome mental health issues, tendencies for violence and the removal of female agency. He believes it's only by removing the 
+							patriarchal pressures exerted on men and boys that we can allow each other the space to be an individual - and encourage more of a positive environment where 
+							it makes us feel empowered to speak out against negative traits and injustices. 
+						</p>
+						
+						<p>
+							Chris is a freelance journalist who has worked for the BBC, Sky, ITV, the Independent, the Telegraph and appeared as a contributor on the BBC, CNN and ITN.
+						</p>
+						
+						<p>
+							This event is organised by the <strong>Equality, Diversity & Inclusivity team</strong> who aim to build an inclusive environment while providing advice, support 
+							and guidance on equality and diversity-related issues and by <strong>One Young World Bath</strong> whose conference on 07 March 2020 will focus on finding solutions 
+							to reduce sexual violence as one of the key themes.
+						</p>
+                    </div>
+                </div>
+            </div>
+			
+			
+			
+			<!-- MARY HELDA AKONGO -->
+			
+            <div class="row">
+			
+				<!-- The photo of mary akongo -->
+                <div class="imgwrapper col-sm-12 col-md-6 order-xs-1 order-md-2 mb-2">
+                    <img class="img-fluid img-responsive mtt-5" src="MaryPhoto1.jpg">
+                </div>
+				
+				<!-- The description of mary akongo -->
+                <div class="col-sm-12 col-md-6 d-flex flex-column">
+                    <div class="d-none d-md-block" style="height:2.5vmax;">
 
+                    </div>
+					
+					<!-- The title -->
                     <div>
                         <p class="trebuchet speakerTitle lead"><strong>Mary Akongo</strong></p>
                         <hr>
                     </div>
-
+					
+					<!-- The text description -->
                     <div class="text-justify">
-                        <p>Mary Helda Akongo travelled from Kampala, Uganda specifically to speak at the One Young World Bath Caucus. She is the founder of <strong>Roaring Doves</strong>; an online and offline peer support community for victims and survivors of gender-based violence (GBV) who come together to create awareness of GBV, share their stories and support each other. She is also the operations and programs manager for <strong>Zimba Women</strong>; a Ugandan organisation that finds innovative technological solutions to create sustainable futures for African women.</p>
-                        <p>Mary Helda is also currently the One Young World Coordinating Ambassador for East Africa, in charge of managing and reporting on the Ambassador Community of the fourteen East African countries. In 2017, Mary Helda was awarded the <strong>25 under 25 award by the Internet Society</strong> for her exceptional work with Zimba Women, which is using the Internet to create a positive impact on the lives of women in Sub-Saharan Africa. She recently won the <strong>World Bank #Blog4Dev </strong> writing competition for penning a brilliant story on her experience as a victim of GBV and her work with Roaring Doves. Mary Helda believes that technology has the power to positively influence the social, political and economic development of women in Africa.</p>
+                        <p>
+						   Mary Helda Akongo travelled from Kampala, Uganda specifically to speak at the One Young World Bath Caucus in 2019. We are excited to announce that we have the 
+						   pleasure of hosting her again for the One Young World Bath Caucus 2020.  
+						</p>
+						
+						<p>
+						   As the founder of <strong>Roaring Doves</strong> – an online and offline peer support community for victims and survivors of gender-based violence (GBV) who come
+						   together to create awareness of GBV – Mary Helda managed to give people the chance to share their stories and support each other.   
+						</p>
+						
+						<p>
+							She is also the operations and programs manager for <strong>Zimba Women</strong>; a Ugandan organisation that finds innovative technological solutions to create 
+							sustainable futures for African women.
+						</p>
+						
+                        <p>
+						   Mary Helda is also currently the One Young World Coordinating Ambassador for East Africa, in charge of managing and reporting on the Ambassador Community of the
+						   fourteen East African countries. In 2017, Mary Helda was awarded the <strong>25 under 25 award by the Internet Society</strong> for her exceptional work with 
+						   Zimba Women, which is using the Internet to create a positive impact on the lives of women in Sub-Saharan Africa. She recently won the <strong>World Bank 
+						   #Blog4Dev </strong> writing competition for penning a brilliant story on her experience as a victim of GBV and her work with Roaring Doves. Mary Helda believes 
+						   that technology has the power to positively influence the social, political and economic development of women in Africa.
+						</p>
                     </div>
-
                 </div>
             </div>
-
+			
+			
+			
+			<!-- CAROLINE CASEY -->
+			
             <div class="row">
-
-                <div class="imgwrapper col-sm-12 col-md-6 order-xs-1 order-md-2">
-                    <img class="img-fluid img-responsive" src="CarolinePhoto.png">
+			
+				<!-- The photo of caroline casey -->
+                <div class="imgwrapper col-sm-12 col-md-6 mb-2">
+                    <img class="img-fluid img-responsive mtt-5" src="CarolinePhoto1.png">
                 </div>
-
+				
+				<!-- The description of caroline casey -->
                 <div class="col-sm-12 col-md-6 d-flex flex-column">
                     <div class="d-none d-md-block" style="height:2.5vmax;">
 
                     </div>
-
+					
+					<!-- The title -->
                     <div>
                         <p class="trebuchet speakerTitle lead"><strong>Caroline Casey</strong></p>
                         <hr>
                     </div>
-
-
-
+					
+					<!-- The text description -->
                     <div class="text-justify">
-                        <p>Caroline Casey is an award-winning social entrepreneur and founder of <strong>#valuable</strong> - a catalyst for an inclusion revolution that exists to position disability equally on the global business leadership agenda.</p>
-                        <p>Committed to building a global movement on inclusive business for the 1.3 billion people in the world with a disability, over the past two decades she has set up several organisations and initiatives centred on <strong>disability business inclusion</strong>.</p>
-                        <p>Her latest initiative, <strong>The Valuable 500</strong>, is an ambitious year-long campaign to get 500 businesses to commit to put disability inclusion on their leadership agendas. Launched at this year's World Economic Forum Annual Summit, Casey succeeded in bringing disability inclusion onto the main stage at <strong>DAVOS</strong> for the first time ever with the support of global business leaders.</p>
                         <p>
-                            The Valuable 500 is supported by a host of global leaders including Sir Richard Branson and Paul Polman, as well as global brands including Virgin Media and Omnicom.
-                            Casey is also a TED speaker, Ashoka Fellow, Eisenhower Fellow, a past advisorsfor the Clinton Global Initiative, a <strong>One Young World Counsellor</strong> and is a Young Global Leader of the World Economic Forum.
-                        </p>
-
+						   Also a returning speaker for the One Young World Bath Caucus, Caroline Casey is an award-winning social entrepreneur and founder of <strong>#valuable</strong>
+						   - a catalyst for an inclusion revolution that exists to position disability equally on the global business leadership agenda.
+						</p>
+						
+						<p>
+						   Committed to building a global movement on inclusive business for the 1.3 billion people in the world with a disability, over the past two decades she has set 
+						   up several organisations and initiatives centred on <strong>disability business inclusion</strong>.
+						</p>
+						
+                        <p>
+							One of her initiatives, <strong>The Valuable 500</strong>, is an ambitious year-long campaign to get 500 businesses to commit to put disability inclusion on 
+							their leadership agendas. Launched last year as part of the World Economic Forum Annual Summit, Casey succeeded in bringing disability inclusion onto the main 
+							stage at <strong>DAVOS</strong> for the first time ever with the support of global business leaders.
+						</p>
+						
+						<p>
+							The Valuable 500 is supported by a host of global leaders including Sir Richard Branson and Paul Polman, as well as global brands including Virgin Media and 
+							Omnicom. Casey is also a TED speaker, Ashoka Fellow, Eisenhower Fellow, a past advisor for the Clinton Global Initiative, a <strong>One Young World Counsellor</strong> 
+							and is a Young Global Leader of the World Economic Forum.
+						</p>
                     </div>
-
                 </div>
             </div>
+			
+			<!-- ###########	END of the KEYNOTE SPEAKER page		###########-->
+			
+			
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 
-            <!--
 
-            <div id="" class="container">
-
-                <div class="text-center mt-4">
-                    <h3 class="trebuchet"><strong>Health and Development Panel</strong></h3>
-                    <hr>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-3">
-
-                        <div>
-                            <p class="trebuchet lead text-center"><strong>Dr. Luisa Enria</strong></p>
-                        </div>
-
-                        <div class="img-wrapper-healthdevelopmentpanel">
-                            <img class="img-fluid img-responsive" src="luisaenria.jpg">
-                        </div>
-
-                        <div>
-                            <p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-3">
-
-                        <div>
-                            <p class="trebuchet lead text-center"><strong>Mary Helda Akongo</strong></p>
-                        </div>
-
-                        <div class="img-wrapper-healthdevelopmentpanel">
-                            <img class="img-fluid img-responsive" src="mary_helda_akongo.jpg">
-                        </div>
-
-                    </div>
-
-                    <div class="col-3">
-
-                        <div>
-                            <p class="trebuchet lead text-center"><strong>Anne Philpott</strong></p>
-                        </div>
-
-                        <div class="img-wrapper-healthdevelopmentpanel">
-                            <img class="img-fluid img-responsive" src="anne_philpott.jpg">
-                        </div>
-
-                    </div>
-
-                    <div class="col-3">
-                        <div>
-                            <p class="trebuchet lead text-center"><strong>Ben Howlett</strong></p>
-                        </div>
-
-                        <div class="img-wrapper-healthdevelopmentpanel">
-                            <img class="img-fluid img-responsive" src="ben_howlett.png">
-                        </div>
-
-                    </div>
-
-                </div>
+			<!-- ###########	START of the DELEGATE'S EXPERIENCE page		###########-->
+			
+			<!-- The title -->
+			<div class="text-center mt-4">
+				<hr>
+                <h3 class="trebuchet"><strong>Delegate's Experience</strong></h3>
+                <hr>
             </div>
-
-            -->
+			
+			<!-- The picture and the text, the <a> tag works like this:  <a href="link.com"> this text will link to link.com </a> -->
+			<div class="text-center">
+				<p>
+					<a href="https://www.bath.ac.uk/announcements/one-young-world-2019-delegates-represent-the-university-at-the-summit-in-london/">
+						Find out more about our delegate’s experience at the One Young World Summit 2019 in London.
+					</a>
+				</p>
+				
+				<!-- The photo of the girls -->
+				<div class="row mb-md-3 justify-content-center">
+					<div class="imgwrapper col-md-6">
+						<img class="img-fluid img-responsive" src="girls.jpg">
+					</div>
+				</div>
+			</div>
+			
+			<!-- ###########	END of the DELEGATE'S EXPERIENCE page		###########-->
+			
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 
             <div class="jumbotron watch-this-space text-center mt-5">
-                <p><strong>The One Young World Bath Caucus 2019 is now officially over. Stay tuned for information about next year's caucus!</strong></p>
+                <p>
+					<strong>
+						Stay tuned for more information regarding the One Young World Bath Caucus 2020 by 
+						following us on social media!
+					</strong>
+				</p>
+				
+				<!-- Add icons -->
+				<div class="row no-gutters justify-content-center">
+					<a href="https://www.facebook.com/OneYoungWorldBath/" class="col-1 fa fa-facebook"></a>
+					<a href="https://twitter.com/oywbath" class="col-1 fa fa-twitter"></a>
+					<a href="https://www.instagram.com/oywbath/" class="col-1 fa fa-instagram"></a>
+				</div>
+
+				<!--
                 <p>
                     Questions? Contact us at
                     <a href="mailto:admin@oneyoungworldbath.com" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#6097AB; text-decoration:underline;">
                         admin@oneyoungworldbath.com
                     </a>
                 </p>
+				-->
             </div>
-
         </div>
-
     </div>
+	<!-- END of the rest of the page -->
 
 
     <hr>

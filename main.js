@@ -16,7 +16,7 @@
 
         $("#info_btn").click(function(){
           $("html,body").animate({
-              scrollTop: $('#about_pg').offset().top - $('body').offset().top + $('body').scrollTop()
+              scrollTop: $('#page_pg').offset().top - $('body').offset().top + $('body').scrollTop()
           });
         });
 
@@ -26,7 +26,7 @@
           });
         });
 
-        CountDownTimer('04/06/2019 10:00 AM', 'countdown');
+        CountDownTimer('07/03/2020 10:00 AM', 'countdown');
 
         function CountDownTimer(dt, id)
         {
