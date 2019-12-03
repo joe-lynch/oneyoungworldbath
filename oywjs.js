@@ -26,7 +26,7 @@
           });
         });
 
-        CountDownTimer('04/06/2019 10:00 AM', 'countdown');
+        CountDownTimer('07/03/2020 10:00 AM', 'countdown');
 
         function CountDownTimer(dt, id)
         {
