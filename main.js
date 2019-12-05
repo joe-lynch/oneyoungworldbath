@@ -29,6 +29,7 @@ $("#buyticket_btn").click(function(){
 
 //CountDownTimer('07/03/2020 10:00 AM', 'countdown');
 
+/*
 function CountDownTimer(dt, id)
 {
 
@@ -72,3 +73,4 @@ function CountDownTimer(dt, id)
 	timer = setInterval(showRemaining, 1000);
 
 }
+*/
