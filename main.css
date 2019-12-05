@@ -57,6 +57,11 @@ body, html {
 	#info_btn{
 		width:45vmax;
 	}
+	
+	.ptt-5 {
+		padding-top:15px;
+	}
+	
 	.speakerTitle{
 		font-size:3vmax;
 	}
