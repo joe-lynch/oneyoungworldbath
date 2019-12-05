@@ -44,6 +44,11 @@
 			padding-left: 5px !important;
 		}
 		
+		.imgsm{
+			width:110%;
+			margin-left:-5%;
+		}
+		
           #buyticket_btn, #info_btn{
             width:45vmax;
         }
@@ -213,8 +218,6 @@
 		  background: #e4405f;
 		  color: white;
 		}
-		
-		
 
 		.myButton {
 			box-shadow: 0px 0px 0px 2px #9fb4f2;
