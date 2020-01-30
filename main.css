@@ -172,7 +172,7 @@ body, html {
   padding: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
   width: 50px;
   text-align: center;
   text-decoration: none;
@@ -204,7 +204,7 @@ body, html {
   color: white;
 }
 
-.fa-eventbrite {
+.fa-ticket {
 	background: #DF3A01;
 	color: white;
 }

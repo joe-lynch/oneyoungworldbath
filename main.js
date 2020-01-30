@@ -27,14 +27,15 @@ $("#buyticket_btn").click(function(){
   });
 });
 
-//CountDownTimer('07/03/2020 10:00 AM', 'countdown');
+// american date... mm/yy/dddd
+CountDownTimer('03/07/2020 10:00 AM', 'countdown');
 
-/*
+
 function CountDownTimer(dt, id)
 {
 
 	var end = new Date(dt);
-
+	console.log(end);
 	var _second = 1000;
 	var _minute = _second * 60;
 	var _hour = _minute * 60;
@@ -47,16 +48,9 @@ function CountDownTimer(dt, id)
 
 		var now = new Date();
 		var distance = end - now;
-
-		if (distance < 0) {
-
-			clearInterval(timer);
-			document.getElementById("#date-countdown").innerHTML = 'THE EVENT HAS STARTED';
-
-			return;
-		}
-
+		console.log(distance)
 		var weeks = Math.floor(distance / _week);
+		console.log(weeks)
 
 		var days = Math.floor((distance % _week) / _day);
 		var hours = Math.floor((distance % _day) / _hour);
@@ -73,4 +67,3 @@ function CountDownTimer(dt, id)
 	timer = setInterval(showRemaining, 1000);
 
 }
-*/
