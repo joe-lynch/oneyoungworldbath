@@ -77,13 +77,31 @@
 				<!-- END of the countdown -->
 				
 				
-				<!-- START of the information button -->
+				
                 <div class="row justify-content-center">
+					<!-- START of the information button -->
                     <button id="info_btn" type="button" class="col-xs-3 m-1 pl-1 pr-1 btn btn-outline-white">
                         Information
                     </button>
-                </div>
-				<!-- END of the information button -->
+					<!-- END of the information button -->
+				</div>	
+				<div class="row justify-content-center">
+					<!-- START of the contact button --> 
+					<button id="contact_btn" type="button" class="col-xs-3 m-1 pl-1 pr-1 btn btn-outline-white">
+                        Contact us
+                    </button>
+					<!-- END of the contact button -->
+				</div>		
+                
+				
+				
+				
+
+                   
+                
+				
+				
+				
             </div>
         </div>
     </div>
@@ -200,9 +218,37 @@
 					<p class="neg-margin lead">Tickets available here</p>	
 					<hr style="width:100%; display:block">
 		
-						<div class="row no-gutters justify-content-center">
+						<!--<div class="row no-gutters justify-content-center">
 							<a href="https://www.eventbrite.co.uk/e/one-young-world-bath-2020-tickets-90782393583" class="col-md-12 col-12 fa fa-ticket fa-lg"><span class="trebuchet">&nbsp; Get your ticket</span></a>
+						<div class="row no-gutters justify-content-center">-->
+						
+
+						<!-- Noscript content for added SEO -->
+						<noscript><a href="https://www.eventbrite.co.uk/e/one-young-world-bath-2020-tickets-90782393583" rel="noopener noreferrer" target="_blank"></noscript>
+						<!-- You can customize this button any way you like -->
+						<div class="row no-gutters justify-content-center">
+							<button id="eventbrite-widget-modal-trigger-90782393583" class="col-md-12 col-12 fa fa-ticket fa-lg btn"><span class="trebuchet">&nbsp; Get your ticket</span></button>
 						</div>
+						<noscript></a>Buy Tickets on Eventbrite</noscript>
+
+						<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+						<script type="text/javascript">
+							var exampleCallback = function() {
+								console.log('Order complete!');
+							};
+
+							window.EBWidgets.createWidget({
+								widgetType: 'checkout',
+								eventId: '90782393583',
+								modal: true,
+								modalTriggerElementId: 'eventbrite-widget-modal-trigger-90782393583',
+								onOrderComplete: exampleCallback
+							});
+						</script>
+							
+						
+
 						
 						<hr class="d-md-none" style="width:100%; display:block">
 					</br>	
@@ -237,9 +283,10 @@
 
                         </p>
                     </div>
-						
+					
+			
 					<!-- Social media -->
-					<div class=" no-gutters">
+					<div class="mt-md-3 no-gutters">
                         <p class="neg-margin lead">Social Media</p>
                         <hr style="width:100%; display:block">
 			
@@ -480,7 +527,7 @@
 			
 			
 			<!-- The title -->
-            <div class="text-center mt-4">
+            <div class="text-center mt-5">
 				<hr>
                 <h3 class="trebuchet"><strong>2019's Keynote Speakers </strong></h3>
                 <hr>
@@ -622,7 +669,7 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 			
 			<!-- Creates the greyish rectangle -->
-            <div class="jumbotron watch-this-space text-center mt-5">
+            <div id="watch-this-space" class="jumbotron text-center mt-5">
                 <p>
 					<strong>
 						Stay tuned for more information regarding the One Young World Bath Caucus 2020 by 
@@ -631,23 +678,15 @@
 				</p>
 				
 				<!-- Add icons -->
-				<div class="row no-gutters justify-content-center">
+				<div class="row no-gutters justify-content-center mb-5">
 					<a href="https://www.facebook.com/OneYoungWorldBath/" class="col-4 col-md-1 fa fa-facebook fa-lg"></a>
 					<a href="https://twitter.com/oywbath" class="col-4 col-md-1 fa fa-twitter fa-lg"></a>
 					<a href="https://www.instagram.com/oywbath/" class="col-4 col-md-1 fa fa-instagram fa-lg"></a>
 				</div>
-
 				
-                <p>
-			
-			<b> Contact us </b> </p>
-		    <p> If you have any queries or questions contact </p>
-		    <p>
-                    <a href="mailto:oywbath@bath.ac.uk" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="color:#6097AB; text-decoration:underline;">
-                        oywbath@bath.ac.uk
-                    </a>
-                </p>
-				
+				<p><strong> Contact us! </strong></p>
+				<p> If you have any queries or questions email us: <a href="mailto:oywbath@bath.co.uk" target="_blank">oywbath@bath.ac.uk</a></p>
+		
             </div>
         </div>
     </div>

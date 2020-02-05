@@ -18,13 +18,13 @@ $('.btn').mouseout(function(){
 $("#info_btn").click(function(){
   $("html,body").animate({
 	  scrollTop: $('#page_pg').offset().top - $('body').offset().top + $('body').scrollTop()
-  });
+  },'slow');
 });
 
-$("#buyticket_btn").click(function(){
+$("#contact_btn").click(function(){
 	$("html,body").animate({
-	  scrollTop: $('#buytickets_pg').offset().top - $('body').offset().top + $('body').scrollTop()
-  });
+	  scrollTop: $('#watch-this-space').offset().top - $('body').offset().top + $('body').scrollTop()
+  },1100);
 });
 
 // american date... mm/yy/dddd
