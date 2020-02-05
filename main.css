@@ -154,12 +154,8 @@ body, html {
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-	padding-right: 0;
-	padding-left: 0;
-  }
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* used for the date and time position */
@@ -208,5 +204,4 @@ body, html {
 	background: #DF3A01;
 	color: white;
 }
-
 
