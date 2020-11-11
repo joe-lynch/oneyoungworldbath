@@ -33,6 +33,18 @@ body, html {
 	width:45vmax;
 }
 
+.st {
+	margin-bottom:0.4rem;
+}
+
+.st1{	
+	margin-top:0.4rem;
+}
+
+.speakerTitle{
+	margin-bottom:0;
+}
+
 /* For screens that are 576 pixels and below */
 @media only screen and (max-width: 576px) {
 
@@ -65,7 +77,6 @@ body, html {
 	.speakerTitle{
 		font-size:3vmax;
 	}
-
 }
 
 /* For screens that are 576 pixels and above */
