@@ -3,7 +3,6 @@
 /* This sets the background colour of the whole webpage */
 body, html {
 	height: 100%;
-	background-color: #F8F7FA;
 }
 	
 /* This sets the background of the splash screen, the screen at the very start */
@@ -145,14 +144,20 @@ body, html {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+.blocks{
+	background-color: #F1F7F8;
+	padding: 0 50px 0 50px;
+	margin:20px 0 10px 0;
+	border-radius: 10px;
+}
+
 /* obsolete at the moment */
 #buytickets_title, #oywtitle{
 	font-size: 3vmax;
 }
 
-/* obsolete at the moment */
-#buytickets_pg, #page_pg{
-	background-color:#F8F7FA;
+#buytickets_pg, #page_pg, body, html{
+	background-color:#E4EEF1;
 }
 
 /* obsolete at the moment */
@@ -184,6 +189,19 @@ body, html {
   text-align: center;
   text-decoration: none;
   color:white;
+}
+
+.hh{
+	background-color:#E4EEF1;
+	border-color:#E4EEF1;
+	height:5px;
+}
+
+#watch-this-space{
+	background-color:#F1F7F8;
+	border-color:red;
+	border: solid 20px;
+	border-color: #E4EEF1;
 }
 
 /* Add a hover effect */
