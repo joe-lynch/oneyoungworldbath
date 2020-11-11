@@ -28,9 +28,9 @@ $("#contact_btn").click(function(){
 });
 
 // american date... mm/yy/dddd
-CountDownTimer('03/07/2020 10:00 AM', 'countdown');
+//CountDownTimer('03/07/2020 10:00 AM', 'countdown');
 
-
+/*
 function CountDownTimer(dt, id)
 {
 	var end = new Date(dt);
@@ -60,3 +60,4 @@ function CountDownTimer(dt, id)
 	
 	timer = setInterval(showRemaining, 1000);
 }
+*/
