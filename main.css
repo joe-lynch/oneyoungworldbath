@@ -2,167 +2,167 @@
  
 /* This sets the background colour of the whole webpage */
 body, html {
-	height: 100%;
+    height: 100%;
 }
-	
+    
 /* This sets the background of the splash screen, the screen at the very start */
 .splash {
-	background-image:url(images/web_bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	max-width: 100%;
+    background-image:url(images/web_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100%;
 }
-	
+    
 /* Used when we have a countdown */
 .countdown-block{
-	text-align: center;
-	color:white;
-	width:8vmax;
+    text-align: center;
+    color:white;
+    width:8vmax;
 }
-	
+    
 /* Change the colour of a piece of text */
 .label{
-	color:white;
-	display:block;
+    color:white;
+    display:block;
 }
 
 /* Size of the "information" button */
 #info_btn, #contact_btn{
-	width:45vmax;
+    width:45vmax;
 }
 
 .st {
-	margin-bottom:0.4rem;
+    margin-bottom:0.4rem;
 }
 
-.st1{	
-	margin-top:0.4rem;
+.st1{   
+    margin-top:0.4rem;
 }
 
 .speakerTitle{
-	margin-bottom:0;
+    margin-bottom:0;
 }
 
 /* For screens that are 576 pixels and below */
 @media only screen and (max-width: 576px) {
 
-	.countdown-block{
-		font-size:14px;
-	}
+    .countdown-block{
+        font-size:14px;
+    }
 
-	.label{
-		font-size:20px;
-	}
-	  
-	.sdg{
-		padding-right: 5px !important;
-		padding-left: 5px !important;
-	}
-	
-	.imgsm{
-		width:110%;
-		margin-left:-5%;
-	}
-	
-	#info_btn, #contact_btn{
-		width:45vmax;
-	}
-	
-	.ptt-5 {
-		padding-top:15px;
-	}
-	
-	.speakerTitle{
-		font-size:3vmax;
-	}
+    .label{
+        font-size:20px;
+    }
+      
+    .sdg{
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+    
+    .imgsm{
+        width:110%;
+        margin-left:-5%;
+    }
+    
+    #info_btn, #contact_btn{
+        width:45vmax;
+    }
+    
+    .ptt-5 {
+        padding-top:15px;
+    }
+    
+    .speakerTitle{
+        font-size:3vmax;
+    }
 }
 
 /* For screens that are 576 pixels and above */
 @media only screen and (min-width: 576px) {
 
-	.countdown-block{
-		font-size:14px;
-	}
+    .countdown-block{
+        font-size:14px;
+    }
 
-	.label{
-		font-size:20px;
-	}
+    .label{
+        font-size:20px;
+    }
 
-	#info_btn, #contact_btn{
-		width:25vmax;
-	}
+    #info_btn, #contact_btn{
+        width:25vmax;
+    }
 
-	.ptt-5 {
-		padding-top:40px;
-	}
+    .ptt-5 {
+        padding-top:40px;
+    }
 
-	.speakerTitle{
-		font-size:30px;
-	}
+    .speakerTitle{
+        font-size:30px;
+    }
 
 }
 
 /* For screens that are 992 pixels and above */
 @media only screen and (min-width: 992px) {
 
-	.countdown-block{
-		font-size: 20px;
-	}
+    .countdown-block{
+        font-size: 20px;
+    }
 
-	.label{
-		font-size: 26px;
-	}
+    .label{
+        font-size: 26px;
+    }
 
-	#info_btn, #contact_btn{
-		width:25vmax;
-	}
-	
-	.ptt-5 {
-		padding-top:40px;
-	}
+    #info_btn, #contact_btn{
+        width:25vmax;
+    }
+    
+    .ptt-5 {
+        padding-top:40px;
+    }
 
-	.speakerTitle{
-		font-size:30px;
-	}
+    .speakerTitle{
+        font-size:30px;
+    }
 
 }
  
 /* style of the "information" button */
 .btn-outline-white{
-	border-color:#ffffff;
-	color:#ffffff;
+    border-color:#ffffff;
+    color:#ffffff;
 }
 
 /* size of the oyw logo */
 #oywlogo{
-	width: 40vmax;
+    width: 40vmax;
 }
 
 /* sets the font to trebuchet */
 .trebuchet{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .blocks{
-	background-color: #F1F7F8;
-	margin:20px 0 10px 0;
-	border-radius: 10px;
+    background-color: #F1F7F8;
+    margin:20px 0 10px 0;
+    border-radius: 10px;
 }
 
 /* obsolete at the moment */
 #buytickets_title, #oywtitle{
-	font-size: 3vmax;
+    font-size: 3vmax;
 }
 
 #buytickets_pg, #page_pg, body, html{
-	background-color:#E4EEF1;
+    background-color:#E4EEF1;
 }
 
 /* obsolete at the moment */
 #video{
-	width:53.1vmax;  /* 1.77 */
-	height:30vmax;   /*  1   */ 
+    width:53.1vmax;  /* 1.77 */
+    height:30vmax;   /*  1   */ 
 }
 
 /* used for styling the display of the 2 columns under the "about the event" page */
@@ -175,7 +175,7 @@ body, html {
 
 /* used for the date and time position */
 .neg-margin{
-	margin-bottom:-5px;
+    margin-bottom:-5px;
 }
 
 /* Style all font awesome icons - facebook, instagram, twitter */
@@ -191,16 +191,16 @@ body, html {
 }
 
 .hh{
-	background-color:#E4EEF1;
-	border-color:#E4EEF1;
-	height:5px;
+    background-color:#E4EEF1;
+    border-color:#E4EEF1;
+    height:5px;
 }
 
 #watch-this-space{
-	background-color:#F1F7F8;
-	border-color:red;
-	border: solid 20px;
-	border-color: #E4EEF1;
+    background-color:#F1F7F8;
+    border-color:red;
+    border: solid 20px;
+    border-color: #E4EEF1;
 }
 
 /* Add a hover effect */
@@ -232,6 +232,6 @@ body, html {
 }
 
 .fa-ticket {
-	background: #DF3A01;
-	color: white;
+    background: #DF3A01;
+    color: white;
 }
